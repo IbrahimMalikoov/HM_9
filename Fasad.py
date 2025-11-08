@@ -22,7 +22,7 @@ class AudioSystem:
         print("Аудиосистема выключена")
 
     def set_volume(self, level):
-        # ВАЖНО: Регулировка громкости
+        #Регулировка громкости
         print(f"Громкость аудиосистемы установлена на {level}")
 
 
@@ -56,7 +56,7 @@ class HomeTheaterFacade:
         self.game_console = game_console
 
     def watch_movie(self, movie, channel, volume):
-        # ВАЖНО: Сценарий просмотра фильма
+        #Сценарий просмотра фильма
         print("\nПодготовка к просмотру фильма...")
         self.tv.turn_on()
         self.tv.set_channel(channel)
@@ -71,7 +71,7 @@ class HomeTheaterFacade:
         self.tv.turn_off()
 
     def play_game(self, game, volume):
-        # ВАЖНО: Сценарий запуска игры
+        #Сценарий запуска игры
         print("\nЗапуск игровой сессии...")
         self.tv.turn_on()
         self.tv.set_input("HDMI 2")
@@ -92,7 +92,6 @@ class HomeTheaterFacade:
         self.audio_system.set_volume(level)
 
 
-# Клиентский код
 if __name__ == "__main__":
     tv = TV()
     audio = AudioSystem()
