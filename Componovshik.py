@@ -59,7 +59,6 @@ class Directory(FileSystemComponent):
         return total_size
 
 
-# Клиентский код
 if __name__ == "__main__":
     # Создание файлов
     file1 = File("document.txt", 120)
